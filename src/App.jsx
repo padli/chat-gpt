@@ -79,7 +79,7 @@ function App() {
 
   return (
     <div className="relative w-full h-full flex justify-center rounded-xl text-left">
-      <MainContainer className="rounded-lg w-[500px] md:w-[800px] h-[560px]">
+      <MainContainer className="rounded-lg w-screen h-screen md:w-[800px] md:h-[560px]">
         <ChatContainer>
           <MessageList
             className="py-2 bg-gradient-to-b from-white via-blue-100 to-white
