@@ -10,7 +10,8 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 import { useState } from "react";
 
-const API_KEY = "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";
+const API_KEY = "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";
+
 
 function App() {
   const [messages, setMessages] = useState([
@@ -79,7 +80,7 @@ function App() {
 
   return (
     <div className="relative w-full h-full flex justify-center rounded-xl text-left">
-      <MainContainer className="rounded-lg w-full h-full md:w-[800px] md:h-[560px]">
+      <MainContainer className="rounded-lg w-full  md:w-[800px] h-[560px]">
         <ChatContainer>
           <MessageList
             className="py-2 bg-gradient-to-b from-white via-blue-100 to-white
