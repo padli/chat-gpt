@@ -77,9 +77,11 @@ function App() {
   };
 
   return (
+    <div >
+
     <div className="relative w-full h-full flex justify-center rounded-xl text-left">
       <MainContainer className="rounded-lg w-full  md:w-[800px] h-[560px]">
-        <ChatContainer>
+        <ChatContainer >
           <MessageList
             className="py-2 bg-gradient-to-b from-white via-blue-100 to-white
           font-[Poppins]"
@@ -95,18 +97,25 @@ function App() {
           >
             {messages.map((message, i) => {
               return (
-                <Message className="rounded-lg py-2" key={i} model={message} />
+                <Message className="py-2 rounded-lg  text-[18px]  " key={i} model={message} />
               );
             })}
           </MessageList>
           <MessageInput
+            className="text-[18px] "
             placeholder="Type message here.."
             attachButton={false}
             onSend={handleSend}
+            autoFocus
           />
         </ChatContainer>
       </MainContainer>
     </div>
+    </div>
+
+
+
+
   );
 }
 
